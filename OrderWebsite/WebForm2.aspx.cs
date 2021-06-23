@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OrderWebsite.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,15 @@ namespace OrderWebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Page.PreviousPage != null)
+            {
+                GridView gridView = (GridView)Page.PreviousPage.FindControl("GridView1");
+                if(gridView != null)
+                {
+                    GridView1.DataSource = gridView.DataSource;
+                }
+            }
+            DataBind();
         }
     }
 }

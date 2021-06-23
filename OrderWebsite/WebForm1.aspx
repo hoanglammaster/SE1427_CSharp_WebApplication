@@ -14,7 +14,8 @@
         <asp:DropDownList ID="DropDownList1" runat="server" Height="30px" Width="200px">
         </asp:DropDownList>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Click Me!" />
-        <asp:GridView ID="GridView1" runat="server" Height="245px" Width="810px">
+        <asp:Button ID="btnPage2" Text="Call Page2" runat="server" width="132px" PostBackUrl="~/WebForm2.aspx" />
+        <asp:GridView ID="GridView1" runat ="server" Height="245px" Width="810px">
         </asp:GridView>
     </form>
 </body>

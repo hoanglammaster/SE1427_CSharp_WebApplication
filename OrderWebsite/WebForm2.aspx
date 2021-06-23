@@ -9,8 +9,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            
             <h1>HELLO WORLD</h1>
         </div>
+        <asp:GridView ID="GridView1" runat="server" Height="312px" style="margin-right: 5px" Width="824px">
+        </asp:GridView>
     </form>
 </body>
 </html>
